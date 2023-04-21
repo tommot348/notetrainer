@@ -33,21 +33,40 @@ async function main() {
     to_find = Math.floor((Math.random() * 35))
     add_note(to_find)
 }
+async function clear_notes() {
+    const old = document.getElementsByClassName("ganzenote")
+    Array.from(old).map(x=>x.remove())
+}
 async function add_note(y = 0) {
-    const old = document.getElementById("ganzenote")
-    if (old) {
-        old.remove()
-    }
+    await clear_notes()
     let n = await get_svg("note.svg")
     const staff = document.getElementById("staff")
-    const note = n.firstChild.getElementById("ganzenote")
-    note.setAttribute("transform", `scale(0.115) translate(1100 ${top_line + y * 61})`)
+    const note = n.firstChild.getElementsByClassName("ganzenote")[0]
+    note.setAttribute("transform", `scale(0.115) translate(1700 ${top_line + y * 61})`)
     staff.insertBefore(note, staff.getElementById("staffcontents"))
     const octave = Math.floor(to_find/7)
     const midi_note = midi_values[to_find%7] + (12*octave)
     setTimeout(() => {
         inst.tone(midi_note, 1, 1)
     }, 10);
+}
+async function clear_sharpflat() {
+    const old = document.getElementsByClassName("sharpflat")
+    Array.from(old).map(x=>x.remove())
+}
+const coordinates = [[0,0],[0.5,2], [1,-0.65],[1.5,1.35],[2,3.35],[2.5, 0.65]]
+const ba_const = 9.35
+async function add_sharpflat(type, x, y) {
+    let scale="0.45"
+    if (type == "flat") {
+        x+=1
+        y+=2
+    }
+    let n = await get_svg(`${type}.svg`)
+    const staff = document.getElementById("staff")
+    const note = n.firstChild.getElementsByClassName("sharpflat")[0]
+    note.setAttribute("transform", `scale(${scale}) translate(${140+x*47} ${47 + y * (47/2)})`)
+    staff.insertBefore(note, staff.getElementById("staffcontents"))
 }
 function to_solfege(e) {
     const buttons = document.getElementById("buttons").getElementsByTagName("button")
@@ -71,6 +90,9 @@ function set_scale(name) {
     }
     let notes = []
     let midi = []
+    clear_sharpflat()
+    let num_sharpflat = 0
+    let type_sharpflat=""
     switch (name) {
         case "c":
             notes=["f", "e", "d", "c", "b", "a", "g"]
@@ -79,10 +101,14 @@ function set_scale(name) {
         case "g":
             notes=["f#", "e", "d", "c", "b", "a", "g"]
             midi=[-90, -88, -86, -84, -83, -81, -79]
+            num_sharpflat=1
+            type_sharpflat="sharp"
             break
         case "d":
             notes=["f#", "e", "d", "c#", "b", "a", "g"]
             midi=[-90, -88, -86, -85, -83, -81, -79]
+            num_sharpflat=2
+            type_sharpflat="sharp"
             break
         default:
             break;
@@ -92,6 +118,12 @@ function set_scale(name) {
         const bttn = document.getElementById(v)
         bttn.onclick = () => check(i)
     })
+    if (num_sharpflat>0) {
+        for (let i = 0; i<num_sharpflat;++i){
+            add_sharpflat(type_sharpflat, coordinates[i][0], coordinates[i][1])
+            add_sharpflat(type_sharpflat, coordinates[i][0], coordinates[i][1] + ba_const)
+        }
+    }
 }
 function reset() {
     score = 0;

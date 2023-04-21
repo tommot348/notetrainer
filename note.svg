@@ -9,7 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
 <g
-   id="ganzenote"
+   class="ganzenote"
    transform="scale(0.1) translate(1000,700)">
 		<g
    transform="matrix(2.58,0,0,1.25,0,-0.02)"
