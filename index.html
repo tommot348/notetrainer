@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple webpage to learn musical notation">
+    <link rel="stylesheet" href="css/pure/pure.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Notentrainer</title>
+</head>
+
+<body>
+    <h1>Notentrainer</h1>
+    <p>Score: <span id="score">0</span></p>
+    <div class="pure-g">
+        <div class="pure-u-1-5 pure-menu" id="preferences">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="solfege">solfege</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="abc">a b c</button>
+                </li>
+            </ul>
+        </div>
+        <div class="pure-u-3-5 staff" id="anchor"></div>
+        <div class="pure-u-1-5 pure-menu" id="buttons">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="c">c</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="c#" id="db">c#/db</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="d">d</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="d#" id="eb">d#/eb</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="e">e</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="f">f</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="f#" id="gb">f#/gb</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="g">g</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="g#" id="ab">g#/ab</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="a">a</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="a#" id="bb">a#/bb</button>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="b">b</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="musical.min.js"></script>
+    <script src="func.js"></script>
+</body>
+
+</html>

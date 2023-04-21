@@ -1,0 +1,28 @@
+body {
+    background-color: #ace;
+    font-family: serif;
+    text-align: center;
+}
+.button-large {
+    font-size: 125%;
+    width: 100%;
+    margin-bottom: 0.1em;
+}
+.staff svg{
+    background-color: #fff;
+    border: 0.2em solid black;
+}
+@media screen and (min-width: 1500px){
+.staff svg{
+    width: 65%;
+    height: auto;
+    background-color: #fff;
+    border: 0.2em solid black;
+}
+}
+@media screen and (max-width: 1500px){
+.staff svg{
+    width: 85%;
+    height: auto;
+}      
+}
