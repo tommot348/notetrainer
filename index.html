@@ -14,19 +14,69 @@
     <h1>Notentrainer</h1>
     <p>Score: <span id="score">0</span></p>
     <div class="pure-g">
-        <div class="pure-u-1-5 pure-menu" id="preferences">
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item">
-                    <button class="pure-button button-large" id="solfege">solfege</button>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="pure-button button-large" id="abc">a b c</button>
-                </li>
-            </ul>
+        <div class="pure-u-1-5" id="preferences">
+            <div class="pure-menu">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <button class="pure-button button-large" id="solfege">solfege</button>
+                    </li>
+                    <li class="pure-menu-item">
+                        <button class="pure-button button-large" id="abc">a b c</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="scales-menu" class="pure-menu pure-menu-scrollable scales-menu">
+                <span class="pure-menu-heading">Scales</span>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">C</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">G</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">D</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">A</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">E</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">B</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">F#</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">F</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Bb</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Eb</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Ab</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Db</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Gb</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
         <div class="pure-u-3-5 staff" id="anchor"></div>
         <div class="pure-u-1-5 pure-menu" id="buttons">
             <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <button class="pure-button button-large" id="b#">cb</button>
+                </li>
                 <li class="pure-menu-item">
                     <button class="pure-button button-large" id="c">c</button>
                 </li>
@@ -43,7 +93,7 @@
                     <button class="pure-button button-large" id="e">e</button>
                 </li>
                 <li class="pure-menu-item">
-                    <button class="pure-button button-large" id="f">f</button>
+                    <button class="pure-button button-large" id="f">e#/f</button>
                 </li>
                 <li class="pure-menu-item">
                     <button class="pure-button button-large" id="f#" id="gb">f#/gb</button>

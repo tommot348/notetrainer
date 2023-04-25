@@ -1,0 +1,288 @@
+{
+    "c": {
+        "notes": [
+            "f",
+            "e",
+            "d",
+            "c",
+            "b",
+            "a",
+            "g"
+        ],
+        "midi": [
+            -89,
+            -88,
+            -86,
+            -84,
+            -83,
+            -81,
+            -79
+        ],
+        "num_sharpflat": 0,
+        "type_sharpflat": ""
+    },
+    "g": {
+        "notes": [
+            "f#",
+            "e",
+            "d",
+            "c",
+            "b",
+            "a",
+            "g"
+        ],
+        "midi": [
+            -90,
+            -88,
+            -86,
+            -84,
+            -83,
+            -81,
+            -79
+        ],
+        "num_sharpflat": 1,
+        "type_sharpflat": "sharp"
+    },
+    "d": {
+        "notes": [
+            "f#",
+            "e",
+            "d",
+            "c#",
+            "b",
+            "a",
+            "g"
+        ],
+        "midi": [
+            -90,
+            -88,
+            -86,
+            -85,
+            -83,
+            -81,
+            -79
+        ],
+        "num_sharpflat": 2,
+        "type_sharpflat": "sharp"
+    },
+    "a": {
+        "notes": [
+            "f#",
+            "e",
+            "d",
+            "c#",
+            "b",
+            "a",
+            "g#"
+        ],
+        "midi": [
+            -90,
+            -88,
+            -86,
+            -85,
+            -83,
+            -81,
+            -80
+        ],
+        "num_sharpflat": 3,
+        "type_sharpflat": "sharp"
+    },
+    "e": {
+        "notes": [
+            "f#",
+            "e",
+            "d#",
+            "c#",
+            "b",
+            "a",
+            "g#"
+        ],
+        "midi": [
+            -90,
+            -88,
+            -87,
+            -85,
+            -83,
+            -81,
+            -80
+        ],
+        "num_sharpflat": 4,
+        "type_sharpflat": "sharp"
+    },
+    "b": {
+        "notes": [
+            "f#",
+            "e",
+            "d#",
+            "c#",
+            "b",
+            "a#",
+            "g#"
+        ],
+        "midi": [
+            -90,
+            -88,
+            -87,
+            -85,
+            -83,
+            -82,
+            -80
+        ],
+        "num_sharpflat": 5,
+        "type_sharpflat": "sharp"
+    },
+    "f#": {
+        "notes": [
+            "f#",
+            "f",
+            "d#",
+            "c#",
+            "b",
+            "a#",
+            "g#"
+        ],
+        "midi": [
+            -90,
+            -89,
+            -87,
+            -85,
+            -83,
+            -82,
+            -80
+        ],
+        "num_sharpflat": 6,
+        "type_sharpflat": "sharp"
+    },
+    "f": {
+        "notes": [
+            "f",
+            "e",
+            "d",
+            "c",
+            "a#",
+            "a",
+            "g"
+        ],
+        "midi": [
+            -89,
+            -88,
+            -86,
+            -84,
+            -82,
+            -81,
+            -79
+        ],
+        "num_sharpflat": 1,
+        "type_sharpflat": "flat"
+    },
+    "bb": {
+        "notes": [
+            "f",
+            "d#",
+            "d",
+            "c",
+            "a#",
+            "a",
+            "g"
+        ],
+        "midi": [
+            -89,
+            -87,
+            -86,
+            -84,
+            -82,
+            -81,
+            -79
+        ],
+        "num_sharpflat": 2,
+        "type_sharpflat": "flat"
+    },
+    "eb": {
+        "notes": [
+            "f",
+            "d#",
+            "d",
+            "c",
+            "a#",
+            "g#",
+            "g"
+        ],
+        "midi": [
+            -89,
+            -87,
+            -86,
+            -84,
+            -82,
+            -80,
+            -79
+        ],
+        "num_sharpflat": 3,
+        "type_sharpflat": "flat"
+    },
+    "ab": {
+        "notes": [
+            "f",
+            "d#",
+            "c#",
+            "c",
+            "a#",
+            "g#",
+            "g"
+        ],
+        "midi": [
+            -89,
+            -87,
+            -85,
+            -84,
+            -82,
+            -80,
+            -79
+        ],
+        "num_sharpflat": 4,
+        "type_sharpflat": "flat"
+    },
+    "db": {
+        "notes": [
+            "f",
+            "d#",
+            "c#",
+            "c",
+            "a#",
+            "g#",
+            "f#"
+        ],
+        "midi": [
+            -89,
+            -87,
+            -85,
+            -84,
+            -82,
+            -80,
+            -78
+        ],
+        "num_sharpflat": 5,
+        "type_sharpflat": "flat"
+    },
+    "gb": {
+        "notes": [
+            "f",
+            "d#",
+            "c#",
+            "b#",
+            "a#",
+            "g#",
+            "f#"
+        ],
+        "midi": [
+            -89,
+            -87,
+            -85,
+            -83,
+            -82,
+            -80,
+            -78
+        ],
+        "num_sharpflat": 6,
+        "type_sharpflat": "flat"
+    }
+}

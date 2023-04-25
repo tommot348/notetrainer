@@ -26,3 +26,12 @@ body {
     height: auto;
 }      
 }
+.scales-menu {
+    margin-top: 1em;
+    height: 300px;
+    border: 0.2em solid black;
+    background-color: #bfdfff;
+}
+.scales-menu > span {
+    border-bottom: 0.2em solid black;
+}
