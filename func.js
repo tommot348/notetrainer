@@ -1,8 +1,8 @@
 const dom_parser = new DOMParser()
 const inst = new Instrument("piano")
 const top_line = 88
-const solfege = ["do", "do diesis/re bemolle", "re", "re diesis/mi bemolle", "mi", "fa", "fa diesis/sol bemolle", "sol", "sol diesis/la bemolle", "la", "la diesis/si bemolle", "si"]
-const abc = ["c", "c#/db", "d", "d#/eb", "e", "f", "f#/gb", "g", "g#/ab", "a", "a#,bb", "b"]
+const solfege = ["do bemolle", "do", "do diesis/re bemolle", "re", "re diesis/mi bemolle", "mi", "fa", "fa diesis/sol bemolle", "sol", "sol diesis/la bemolle", "la", "la diesis/si bemolle", "si"]
+const abc = ["cb", "c", "c#/db", "d", "d#/eb", "e", "f", "f#/gb", "g", "g#/ab", "a", "a#,bb", "b"]
 const midi_values = [-89, -88, -86, -84, -83, -81, -79]
 //                         f#      c#        g#          d#           a#         e#
 const sharp_coordinates = [[0, 0], [0.5, 2], [1, -0.65], [1.5, 1.35], [2, 3.35], [2.5, 0.65]]
