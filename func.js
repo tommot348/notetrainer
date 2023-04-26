@@ -4,9 +4,9 @@ const top_line = 88
 const solfege = ["do", "do diesis/re bemolle", "re", "re diesis/mi bemolle", "mi", "fa", "fa diesis/sol bemolle", "sol", "sol diesis/la bemolle", "la", "la diesis/si bemolle", "si"]
 const abc = ["c", "c#/db", "d", "d#/eb", "e", "f", "f#/gb", "g", "g#/ab", "a", "a#,bb", "b"]
 const midi_values = [-89, -88, -86, -84, -83, -81, -79]
-                            //f#      c#       g#         d#            a#         e#
+//                         f#      c#        g#          d#           a#         e#
 const sharp_coordinates = [[0, 0], [0.5, 2], [1, -0.65], [1.5, 1.35], [2, 3.35], [2.5, 0.65]]
-                            //bb      eb          ab            db         gb          cb 
+//                        bb        eb           ab         db           gb      cb 
 const flat_coordinates = [[0, 2.7], [0.5, 0.65], [1, 3.35], [1.5, 1.35], [2, 4], [2.5, 2]]
 const ba_const = 9.35
 let score = 0
@@ -46,7 +46,7 @@ async function main() {
     to_find = Math.floor((Math.random() * 35))
     add_note(to_find)
     const scale_btns = Array.from(document.getElementById("scales-menu").getElementsByClassName("pure-menu-link"))
-    scale_btns.forEach(x=>x.onclick = ()=>set_scale(x.textContent.toLowerCase()))
+    scale_btns.forEach(x => x.onclick = () => set_scale(x.textContent.toLowerCase()))
 }
 function clear_notes() {
     const old = document.getElementsByClassName("ganzenote")
