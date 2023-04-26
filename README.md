@@ -5,7 +5,7 @@
 
 ## How to run
 First you have to download the dependencies.\
-https://purecss.io/\
+https://purecss.io/ \
 https://github.com/PencilCode/musical.js/
 
 This can be done (if you can run .sh files) by running `get-deps.sh`. The script needs npm and git to work
