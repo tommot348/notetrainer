@@ -1,5 +1,6 @@
 const dom_parser = new DOMParser()
 const inst = new Instrument("piano")
+const error_sound = new Instrument()
 const top_line = 88
 const solfege = ["do bemolle", "do", "do diesis/re bemolle", "re", "re diesis/mi bemolle", "mi", "fa", "fa diesis/sol bemolle", "sol", "sol diesis/la bemolle", "la", "la diesis/si bemolle", "si"]
 const abc = ["cb", "c", "c#/db", "d", "d#/eb", "e", "f", "f#/gb", "g", "g#/ab", "a", "a#,bb", "b"]
@@ -17,7 +18,8 @@ function check(x) {
     if (result) {
         score++
     } else {
-        score = 0
+        reset()
+        return;
     }
     to_find = Math.floor((Math.random() * 35))
     add_note(to_find)
@@ -131,5 +133,9 @@ function set_scale(name) {
 function reset() {
     score = 0;
     document.getElementById("score").textContent = score
+    setTimeout(() => {
+        error_sound.play("C,")  
+        error_sound.play("D,")  
+    }, 10);
 }
 main()
